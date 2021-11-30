@@ -274,7 +274,10 @@ cc_library_shared {
 cc_library_shared {
     name: "libgui_vendor",
     vendor: true,
-    defaults: ["libgui_defaults"]
+    defaults: ["libgui_defaults"],
+    dist: {
+        dest: "libgui.so"
+    }
 }
 
 subdirs = ["tests"]
